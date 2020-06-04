@@ -13,8 +13,11 @@
     src: url('Avenir-LT-Std-45-Book_5171.ttf') format('truetype') /* Safari, Android, iOS */
 }
 
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book');
+
 body {
-    font-family: "Avenir LT Std Book",Open Sans, sans-serif; color: #444444;
+    font-family: "ITC Avant Garde Gothic Std Book",Open Sans, sans-serif;
+    color: #444444;
 }
 
 a {
@@ -27,7 +30,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Avenir LT Std Book", sans-serif;
+    font-family: "ITC Avant Garde Gothic Std Book", sans-serif;
 }
 
 /*--------------------------------------------------------------
