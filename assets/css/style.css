@@ -8,9 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Avenir LT Std Book';
+    src: url('Avenir-LT-Std-45-Book_5171.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+    font-family: "Avenir LT Std Book",Open Sans, sans-serif; color: #444444;
 }
 
 a {
@@ -23,7 +27,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+    font-family: "Avenir LT Std Book", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -187,9 +191,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#header .logo img {
-  max-height: 40px;
-}
+    #header .logo img {
+        max-height: 40px;
+      
+    }
 
 @media (max-width: 992px) {
   #header {
@@ -453,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -463,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero h2 {
   color: #eee;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 #hero .btn-get-started {
