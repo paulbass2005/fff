@@ -21,13 +21,13 @@ body {
 }
 
 a {
-  color: #cc1616;
+    color: #F6CD19;
 }
 
-a:hover {
-  color: #e82d2d;
-  text-decoration: none;
-}
+    a:hover {
+        color: #F6CD19;
+        text-decoration: none;
+    }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "ITC Avant Garde Gothic Std Book", sans-serif;
@@ -45,15 +45,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  background: #cc1616;
-  color: #fff;
-  transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    background: #F6CD19;
+    color: #fff;
+    transition: all 0.4s;
 }
 
 .back-to-top i:hover {
@@ -75,19 +75,19 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #cc1616;
-  border-top-color: #efefef;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
+    #preloader:before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #F6CD19;
+        border-top-color: #efefef;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: animate-preloader 1s linear infinite;
+        animation: animate-preloader 1s linear infinite;
+    }
 
 @-webkit-keyframes animate-preloader {
   0% {
