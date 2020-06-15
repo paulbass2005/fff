@@ -499,16 +499,16 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
-        height: 50vh;
-        min-height:380px;
+        height: 30vh;
+        min-height:280px;
     }
 }
 
 @media (max-width: 768px) {
     #hero {
         text-align: center;
-        height: 70vh;
-        min-height: 580px;
+        height: 50vh;
+        min-height: 480px;
     }
   #hero .container {
     padding-top: 80px;
@@ -538,16 +538,16 @@ section {
   position: relative;
 }
 
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #191919;
-  position: relative;
-  z-index: 2;
-}
+    .section-title h2 {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: #191919;
+        position: relative;
+        z-index: 2;
+    }
 
 .section-title span {
   position: absolute;
