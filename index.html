@@ -47,6 +47,15 @@
             border:0;
         }
     </style>
+    <script>
+        function Apply() {
+       var el = document.getElementById("apply");
+       var email = document.getElementById("mailid").value
+       el.action= "/apply.html?email=" + email
+       el.method="POST"
+        document.getElementById("apply").submit();
+        }
+    </script>
 </head>
 
 <body>
@@ -89,7 +98,8 @@
             <div class="m-auto text-center pb-4">
 
                 <form id="apply">
-                    <input type="text" style="border:1px solid #000000; border-bottom-color:#fff; background-color:#000000;color:#fff" placeholder="Enter Email" /> <input type="button" class="btn-dark p-1 ml-2 " value="APPLY" title="Apply" />
+                    <input type="text" id="mailid" style="border:1px solid transparent; border-bottom-color:#fff; background-color:#000000;color:#fff" placeholder="Enter Email" /> 
+                    <input type="button" class="btn-dark p-1 ml-2 " value="APPLY"  onclick="Apply()" title="Apply" />
                 </form>
 
                 <!--<a class="typeform-share button" href="https://sghosh71.typeform.com/to/zfwKSF" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#F6CD19;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:45px;text-align:center;margin:0;height:45px;padding:0px 30px;border-radius:22px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="0" target="_blank">Get Started </a>
