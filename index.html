@@ -51,9 +51,7 @@
         function Apply() {
        var el = document.getElementById("apply");
        var email = document.getElementById("mailid").value
-       el.action= "/apply.html"
-       el.method="POST"
-        el.submit();
+       window.location.href="/apply.html?email="+email
         }
     </script>
 </head>
