@@ -58,9 +58,8 @@
         function Apply() {
        var el = document.getElementById("apply");
        var email = document.getElementById("mailid").value
-      // window.location.href="/apply.html?email="+email
-        el.action="/apply.html?email="+email
-        el.submit();
+        window.location.href="/apply.html?email="+email;
+        return false;
         }
     </script>
 </head>
@@ -104,7 +103,7 @@
         <div class="container col-lg-10 p-4 mt-5 text-center">
             <div class="m-auto text-center pb-4">
 
-                <form id="apply" onsubmit="Apply()" >
+                <form id="apply" onsubmit="return Apply()" >
                     <input type="email" class="email-input" id="mailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Email" required /> 
                     <input type="submit" class="btn-dark pt-2 ml-2 mt-4" value="APPLY"   title="Apply" />
 
