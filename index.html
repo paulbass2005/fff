@@ -46,12 +46,21 @@
             color:#000;
             border:0;
         }
+        .email-input{
+            border:0;
+            border-bottom:1px solid #fff; 
+            background-color:#000000;
+            color:#fff;
+            outline: 0 none;
+        }
     </style>
     <script>
         function Apply() {
        var el = document.getElementById("apply");
        var email = document.getElementById("mailid").value
-       window.location.href="/apply.html?email="+email
+      // window.location.href="/apply.html?email="+email
+        el.action="/apply.html?email="+email
+        el.submit();
         }
     </script>
 </head>
@@ -95,9 +104,10 @@
         <div class="container col-lg-10 p-4 mt-5 text-center">
             <div class="m-auto text-center pb-4">
 
-                <form id="apply">
-                    <input type="text" id="mailid" style="border:1px solid transparent; border-bottom-color:#fff; background-color:#000000;color:#fff" placeholder="Enter Email" /> 
-                    <input type="button" class="btn-dark p-1 ml-2 " value="APPLY"  onclick="Apply()" title="Apply" />
+                <form id="apply" >
+                    <input type="email" class="email-input" id="mailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Email" required /> 
+                    <input type="submit" class="btn-dark pt-2 ml-2 mt-4" value="APPLY"   title="Apply" onsubmit="Apply()"/>
+                    
                 </form>
 
                 <!--<a class="typeform-share button" href="https://sghosh71.typeform.com/to/zfwKSF" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#F6CD19;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:18px;line-height:45px;text-align:center;margin:0;height:45px;padding:0px 30px;border-radius:22px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="0" target="_blank">Get Started </a>
