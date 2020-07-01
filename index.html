@@ -40,11 +40,18 @@
         gtag('config', 'UA-169185021-1');
     </script>
     <style>
-        .btn-dark{
+        .btn-apply{
             background-color:#F6CD19!important;
-            min-width:100px;
+            min-height: 36px;
+            height: 36px;
             color:#000;
-            border:0;
+            border:0px;
+            border-radius:4px;
+            vertical-align:middle ;
+            font-size: 12px;
+            line-height: 36px;
+            display: inline-block;
+        
         }
         .email-input{
             border:0;
@@ -97,7 +104,7 @@
 
                 <form id="apply" onsubmit="return Apply()" >
                     <input type="email" class="email-input" id="mailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Email" required /> 
-                    <input type="submit" class="btn-dark pt-2 ml-2 mt-4" value="APPLY"   title="Apply" />
+                    <input type="submit" class="btn-apply  ml-2" value="REQUEST ACCESS"   title="REQUEST ACCESS" />
 
                 </form>
 
